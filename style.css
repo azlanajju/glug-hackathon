@@ -1,18 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
 *{
     margin: 0;
     padding: 0;
 }
 
-.large-header {
-position: absolute;
-}
-.large-header canvas {
-	width: 100%;
-	height: 100%;
-}
 :root{
     --darkred:rgb(180, 10, 10);
     --darkblue: rgb(2, 2, 97);
@@ -58,6 +51,13 @@ body{
         background-position: center;
     }
 }
+.large-header {
+    position: absolute;
+    }
+    .large-header canvas {
+        width: 100%;
+        height: 100%;
+    }
 section{
     height: 100vh;
     width: 100vw;
@@ -147,53 +147,188 @@ section{
 
 
 
+
+
+
+
+/* ======================================= */
+
+
+.section2 {
+    background-color: #979494c0;
+    backdrop-filter: blur(3px);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+.poster{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    
+}
+.section2 h1 {
+    font-size: 55px;
+    padding:30px;
+    color: var(--darkred);
+}
+
+ .section2  p{
+    font-size: 28px;
+    word-wrap: break-word;
+    padding: 30px;
+    text-align: justify;
+}
+
+.regbtn {
+    background-color: var(--darkred);
+    border-radius: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.regbtn a{
+    text-decoration: none;
+    color: #fff;
+}
+.rules{
+    padding: 30px;
+}
+
+.rules h3 {
+    font-size: 35px;
+    color: #000;
+
+}
+
+.rules ul{
+    font-size: 23px;
+    line-height: 1.8;
+    padding: 10px 50px;
+
+}
+
+.regBtnSection{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0e0e0e93;
+    backdrop-filter: blur(10px);
+}
+.regBtnSection a{
+    background:#000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ========================================================
                            phone resposive
     ======================================================== */
-@media only screen and (max-width: 600px) {
-    .large-header  {
-        display: none;
+    @media only screen and (max-width: 600px) {
+        .large-header  {
+            display: none;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-position: center;
+              }
+    
+            .glugLogo img{
+            width: 60px;  
+            top: 10px;      
+            } 
+        .title h1{
+            font-size: 60px;
+            margin: 0;
+            margin-top: -15px;
+        }
+        .title h2{
+            font-size: 30px;
+            margin: 0;
+        }
+        .hackathon{
+            font-size: 40px;
+            margin-top: -18px;
+            
     }
-    body {
+    .college_logo{
+        width: 50px;
+        top: 13px;
+    }
+    .college {
+        font-size: 18px;
+        left: 50px;
+        top: 10px;
+        line-height: 18px;
+    
+    }
+    .small{
+        font-size: 14px;
+    }
+    .dept{
+        font-size: 6px;
+        margin-top: -5px;
+    }
+
+    .section2 {
         width: 100vw;
-        height: 100vh;
-        background-position: center;
-          }
-
-        .glugLogo img{
-        width: 60px;  
-        top: 10px;      
-        } 
-    .title h1{
-        font-size: 60px;
         margin: 0;
-        margin-top: -15px;
+    
     }
-    .title h2{
-        font-size: 30px;
-        margin: 0;
+    .section2 h1{
+        font-size: 27px;
     }
-    .hackathon{
-        font-size: 40px;
-        margin-top: -18px;
-        
-}
-.college_logo{
-    width: 50px;
-    top: 13px;
-}
-.college {
-    font-size: 18px;
-    left: 50px;
-    top: 10px;
-    line-height: 18px;
 
-}
-.small{
-    font-size: 14px;
-}
-.dept{
-    font-size: 6px;
-    margin-top: -5px;
-}
-}
+    .section2 p{
+        font-size: 15px;
+        padding-top: 0;
+    }
+    .regBtnSection a{
+        font-size: 20px;
+    }
+    .rules{
+        padding: 5px;
+    }
+    .rules h3{
+        font-size: 20px;
+    }
+    .rules ul{
+        font-size: 15px;
+
+    }
+    }
+    
+    
+    
+    

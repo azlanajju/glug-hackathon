@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon registration</title>
+    <link rel="stylesheet" href="./form.css">
+
+</head>
+
+<body>
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+
+
+
+    <div class="formcontainer">
+
+        <form class="form" method="POST" name="google-sheet">
+            <h1>Hackathon Registeration </h1>
+            <br>
+            <input type="hidden" id="registration-key" name="registration-key" value="">
+            <input type="hidden" id="num-registrations" name="num-registrations" value="0">
+            <span>
+                <label for="team">College Name:</label>
+                <input type="text" class="inputfield" id="team" name="CollegeName"
+                    placeholder="Enter your College name*" required></span>
+            <span>
+
+                <span>
+                    <label for="team">Team Name:</label>
+                    <input type="text" class="inputfield" id="team" name="Team_Name" placeholder="Team Name*"
+                        required></span>
+
+
+
+                <div class="member">
+                    <h3>member 1 details</h3>
+                    <span>
+
+                        <input type="text" class="inputfield" id="leaderName" name="name" placeholder="Name*" required>
+
+                    </span>
+                    <span>
+                        <input type="email" class="inputfield" id="email" name="Email" placeholder="Email*"
+                            required></span>
+                    <span>
+                        <input type="text" class="inputfield" id="phone" name="Phone" placeholder="Phone Number*"
+                            required></span>
+
+                            <div id="btn1" class="add" onclick="addmember2()">+ Add more Member</div>
+                </div>
+                <div id="member2" class="member">
+                    <h3>member 2 details</h3>
+                    <span>
+
+                        <input type="text" class="inputfield" id="leaderName" name="leaderName" placeholder="Name*" >
+
+                    </span>
+                    <span>
+                        <input type="email" class="inputfield" id="email" name="Email" placeholder="Email*"></span>
+                    <span>
+                        <input type="text" class="inputfield" id="phone" name="Phone" placeholder="Phone Number*"></span>
+
+                            <div id="btn2"  class="add" onclick="addmember3()">+ Add more Member</div>
+                </div>
+
+                <div id="member3" class="member">
+                    <h3>member 3 details</h3>
+                    <span>
+
+                        <input type="text" class="inputfield" id="leaderName" name="leaderName"  placeholder="Name*" >
+
+                    </span>
+                    <span>
+                        <input type="email" class="inputfield" id="email" name="Email" placeholder="Email*"></span>
+                    <span>
+                        <input type="text" class="inputfield" id="phone" name="Phone" placeholder="Phone Number*"></span>
+
+                            <div id="btn3" class="add" onclick="addmember4()">+ Add more Member</div>
+                </div>
+
+                             <div id="member4" class="member">
+                    <h3>member 4 details</h3>
+                    <span>
+
+                        <input type="text" class="inputfield" id="leaderName" name="leaderName" placeholder="Name*" >
+
+                    </span>
+                    <span>
+                        <input type="email" class="inputfield" id="email" name="Email" placeholder="Email*" ></span>
+                    <span>
+                        <input type="text" class="inputfield" id="phone" name="Phone" placeholder="Phone Number*" ></span>
+
+                </div>
+
+          
+
+
+                        <br>
+                        <span class="submitspan"><input class="submit" type="submit" value="Submit"
+                                onclick="generateRegistrationKey();" name="submit"> </span>
+        </form>
+    </div>
+    <div class="issue">
+        <p>Having issues?</p>
+        <a
+            href="https://wa.me/+916361557581?text=*issue%20related%20to%20Embers'23%20registration*%0D%0A%0D%0ADescribe%20your%20issue:">Contact
+            us</a>
+    </div>
+<script src="./form.js"></script>
+
+</body>
+
+</html>
